@@ -30,10 +30,10 @@ interface Product {
 const SinglePage: React.FC = () => {
   const { id, productId } = useParams<{ id: string; productId: string }>();
   const [product, setProduct] = useState<Product | null>(null);
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
   const [number, setNumber] = useState<number>(1);
   const dispatch = useDispatch();
-
+  console.log(setThumbsSwiper)
   console.log(thumbsSwiper)
   console.log(id, productId);
   useEffect(() => {
@@ -74,10 +74,10 @@ const SinglePage: React.FC = () => {
             <div className="single-page__data">
               <div className="single-page__imgcarousel">
                 <Swiper
-                  style={{
-                    '--swiper-navigation-color': '#fff',
-                    '--swiper-pagination-color': '#fff',
-                  }}
+                  // style={{
+                  //   '--swiper-navigation-color': '#fff',
+                  //   '--swiper-pagination-color': '#fff',
+                  // }}
                   spaceBetween={5}
                   navigation={true}
                   thumbs={{ swiper: thumbsSwiper }}
@@ -93,7 +93,7 @@ const SinglePage: React.FC = () => {
                   }
                 </Swiper>
                 <Swiper
-                  onSwiper={setThumbsSwiper}
+                  // onSwiper={setThumbsSwiper}
                   spaceBetween={10}
                   slidesPerView={4}
                   freeMode={true}

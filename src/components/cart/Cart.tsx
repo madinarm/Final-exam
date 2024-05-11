@@ -24,7 +24,7 @@ const Cart = () => {
           <div className="saved__cards">
 
             {
-              cartBox.map(({ id, stock, price, images, title, brand }) => (
+              cartBox.map(({ id, stock, price, images, title, brand } : any) => (
                 <div key={id} className="saved__card">
                   <div className="saved__img-wrapper">
                     <div className="saved__after watch">
