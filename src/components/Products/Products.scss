@@ -1,0 +1,209 @@
+.products {
+    max-width: 1004px !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px;
+    margin: 0 auto;
+}
+
+.products__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products__header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 17px;
+
+    h2 {
+        color: rgb(51, 51, 51);
+        font-style: italic;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+}
+.products__image > img {
+    border-radius: 3px 3px 0 0;
+}
+
+.products__brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 0px 24px 0px;
+    border-bottom: 1px solid #c7c7c7;
+
+
+    .products__brand__card {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        flex-direction: column;
+
+        p {
+            color: rgb(112, 112, 112);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            text-align: left;
+        }
+
+        h6 {
+            color: rgb(51, 51, 51);
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+        }
+
+    }
+}
+
+.products__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 16px;
+    margin-top: 45px;
+}
+
+
+.products__card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px;
+    max-width: 241px !important;
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    text-decoration: none;
+
+    a>img {
+        width: 241px;
+        height: 241px;
+        border-radius: 8px;
+        object-fit: contain;
+        background: rgba(0, 0, 0, 0.05);
+
+    }
+
+    .sponsored {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        h5 {
+            color: rgb(112, 112, 112);
+            font-size: 12px;
+            line-height: 14px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.products__card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p,
+    strong {
+        color: rgb(17, 24, 32);
+        font-style: italic;
+        line-height: 18.2px;
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    strong {
+        font-size: 16px;
+        margin-top: 13px;
+    }
+}
+
+.add-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 8px 4px 8px;
+    border-radius: 50%;
+    border: 1px solid #c7c7c7;
+
+    &>button {
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        svg {
+            margin: auto;
+            font-size: 18px;
+            color: #c7c7c7;
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100% !important;
+    max-height: 250px !important;
+    object-fit: cover;
+}
+
+.swiper-button-next::after {
+    color: #000;
+    padding: 10px 14px;
+    background-color: #cececebf;
+    border-radius: 50%;
+    font-size: 15px !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-button-prev::after {
+    color: #000;
+    padding: 10px 14px;
+    background-color: #cececebf;
+    border-radius: 50%;
+    font-size: 15px !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
